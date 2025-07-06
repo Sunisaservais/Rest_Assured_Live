@@ -48,10 +48,12 @@ public class P01_SimpleGETRequest {
 
         System.out.println("-------------------StatusCode-------------------");
         System.out.println("response.getStatusCode() = " + response.getStatusCode());
+        System.out.println("response.statusCode() = " + response.statusCode());
 
         System.out.println("-------------------Response-------------------");
         System.out.println("response.getHeader(\"Response\") = " + response.getBody().asString());
         response.prettyPrint();
+        //response.prettyPeek();
 
         System.out.println("-------------------Date-------------------");
         System.out.println("response.getHeader(\"Date\") = " + response.getHeader("Date"));
@@ -62,6 +64,5 @@ public class P01_SimpleGETRequest {
 
         //Response headers has "Date"
         assertTrue(response.getHeaders().hasHeaderWithName("Date"));
-
     }
 }
