@@ -1,5 +1,6 @@
 package com.cydeo.Weekend.week1;
 
+import com.cydeo.Weekend.utilities.HrTestBase;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;
@@ -8,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class P01_SimpleGETRequest {
+public class P01_SimpleGETRequest extends HrTestBase {
 
     //Gherkin Language:
     //Given--> condition that you have currently
@@ -24,11 +25,9 @@ public class P01_SimpleGETRequest {
     @Test
     public void test1() {
 
-        baseURI = "http://cydeo.onthewifi.com:1000/ords/hr";
 
         Response response = given().log().all()
                 .accept(ContentType.JSON)
-                .baseUri(baseURI)
                 .when()
                 .get("/regions");
 
