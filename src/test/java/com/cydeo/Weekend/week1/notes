@@ -1,0 +1,25 @@
+Week 1 Notes
+
+# Stage 1: Introduction to APIs --> week 1 --> Notion File
+# Stage 2: API Test Automation --> week 1-2-3-4
+# Stage 3: Integration with Cucumber-JUnit (BDD approach) --> week 5
+# Stage 4: Cucumber Project With Three Layers(UI-DB-API) --> week 7-8 --> Sprint 3
+
+
+--- (Stage-1) We have already handled until now with theoretical part.
+
+--- (Stage-2) The steps for doing API Test Automation
+        1. Understand Requirements
+        2. Read API Documentation:
+                Base URL and Endpoints
+                Parameters:
+                       Path Parameters
+                       Query Parameters
+                Headers (Metadata):
+                        Request Headers
+                        Response Headers
+                Status Codes
+        3. Perform Manual Testing
+        4. Begin Automation for API Testing --> Rest Assured Library
+                (Automation for UI Testing) --> Selenium
+                (Automation for DB Testing) --> JDBC
