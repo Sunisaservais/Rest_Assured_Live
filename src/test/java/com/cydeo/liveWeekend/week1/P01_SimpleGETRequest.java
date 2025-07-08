@@ -1,6 +1,6 @@
-package com.cydeo.Weekend.week1;
+package com.cydeo.liveWeekend.week1;
 
-import com.cydeo.Weekend.utilities.HrTestBase;
+import com.cydeo.liveWeekend.utilities.HrTestBase;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.DisplayName;

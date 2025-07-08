@@ -1,0 +1,32 @@
+Week01Tasks
+
+Homework 1
+
+Document: https://documenter.getpostman.com/view/13495747/2sAYdkGoc6
+
+     * Task 1 :
+     * - Given accept type is Json
+     * - And base URI: http://cydeo.onthewifi.com:1000/ords/hr
+     * - When users sends request to endpoints:/countries/US
+     * - Then status code is 200
+     * - And Content - Type is application/json
+     * - And response contains United States of America
+
+
+     * Task 2 : NEGATIVE TESTS
+     * - Given accept type is Json
+     * - And base URI: http://cydeo.onthewifi.com:1000/ords/hr
+     * - When users sends request to endpoints: /employees/1
+     * - Then status code is 404
+
+
+     * Task 3 :
+     * - Given Accept type  is Json
+     * - And base URI: http://cydeo.onthewifi.com:1000/ords/hr
+     * - When users sends request to endpoints:/regions/10
+     * - Then status code is 200
+     * - And Content - Type is application/json
+     * - And response contains Europe
+     * - And header should contains Date
+     * - And "Transfer-Encoding" should be "chunked"
+

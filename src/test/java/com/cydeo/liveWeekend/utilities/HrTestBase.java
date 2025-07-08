@@ -1,4 +1,4 @@
-package com.cydeo.Weekend.utilities;
+package com.cydeo.liveWeekend.utilities;
 
 import org.junit.jupiter.api.BeforeAll;
 
