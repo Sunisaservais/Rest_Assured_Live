@@ -30,7 +30,7 @@ public class P01 {
                 .when()
                 .get(baseURI + "/countries/US");
 
-        response.prettyPrint();
+        //response.prettyPrint();
 
         //Verify status code is 200
         assertEquals(200, response.getStatusCode());
@@ -60,7 +60,7 @@ public class P01 {
                 .when()
                 .get(baseURI + "/employees/1");
 
-        response.prettyPrint();
+        //response.prettyPrint();
 
         //Verify status code is 404
         assertEquals(404, response.getStatusCode());
@@ -88,7 +88,7 @@ public class P01 {
                 .when()
                 .get("/regions/10");
 
-        response.prettyPrint();
+        //response.prettyPrint();
 
         //Verify status code is 200
         assertEquals(200, response.getStatusCode());
